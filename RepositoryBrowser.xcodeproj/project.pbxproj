@@ -1,0 +1,263 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D35E92FD14ECF41E00DB3872 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D35E92FC14ECF41E00DB3872 /* UIKit.framework */; };
+		D35E92FF14ECF41E00DB3872 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D35E92FE14ECF41E00DB3872 /* Foundation.framework */; };
+		D35E930114ECF41E00DB3872 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D35E930014ECF41E00DB3872 /* CoreGraphics.framework */; };
+		D35E931614ECF48F00DB3872 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D35E931514ECF48F00DB3872 /* main.m */; };
+		D35E931A14ECF4A000DB3872 /* RBAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D35E931814ECF4A000DB3872 /* RBAppDelegate.m */; };
+		D35E931D14ECF4E300DB3872 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = D35E931B14ECF4E300DB3872 /* InfoPlist.strings */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		D35E92F814ECF41E00DB3872 /* RepositoryBrowser.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RepositoryBrowser.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D35E92FC14ECF41E00DB3872 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		D35E92FE14ECF41E00DB3872 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		D35E930014ECF41E00DB3872 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		D35E931514ECF48F00DB3872 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = Code/Other/main.m; sourceTree = SOURCE_ROOT; };
+		D35E931714ECF4A000DB3872 /* RBAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RBAppDelegate.h; path = Code/Other/RBAppDelegate.h; sourceTree = SOURCE_ROOT; };
+		D35E931814ECF4A000DB3872 /* RBAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RBAppDelegate.m; path = Code/Other/RBAppDelegate.m; sourceTree = SOURCE_ROOT; };
+		D35E931C14ECF4E300DB3872 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = Resources/en.lproj/InfoPlist.strings; sourceTree = SOURCE_ROOT; };
+		D35E931E14ECF5C800DB3872 /* RepositoryBrowser-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "RepositoryBrowser-Prefix.pch"; path = "Code/Other/RepositoryBrowser-Prefix.pch"; sourceTree = SOURCE_ROOT; };
+		D35E931F14ECF5D300DB3872 /* RepositoryBrowser-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "RepositoryBrowser-Info.plist"; path = "Resources/RepositoryBrowser-Info.plist"; sourceTree = SOURCE_ROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D35E92F514ECF41E00DB3872 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D35E92FD14ECF41E00DB3872 /* UIKit.framework in Frameworks */,
+				D35E92FF14ECF41E00DB3872 /* Foundation.framework in Frameworks */,
+				D35E930114ECF41E00DB3872 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D35E92ED14ECF41E00DB3872 = {
+			isa = PBXGroup;
+			children = (
+				D35E930214ECF41E00DB3872 /* RespositoryBrowser */,
+				D35E92FB14ECF41E00DB3872 /* Frameworks */,
+				D35E92F914ECF41E00DB3872 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D35E92F914ECF41E00DB3872 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D35E92F814ECF41E00DB3872 /* RepositoryBrowser.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D35E92FB14ECF41E00DB3872 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D35E92FC14ECF41E00DB3872 /* UIKit.framework */,
+				D35E92FE14ECF41E00DB3872 /* Foundation.framework */,
+				D35E930014ECF41E00DB3872 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D35E930214ECF41E00DB3872 /* RespositoryBrowser */ = {
+			isa = PBXGroup;
+			children = (
+				D35E931714ECF4A000DB3872 /* RBAppDelegate.h */,
+				D35E931814ECF4A000DB3872 /* RBAppDelegate.m */,
+				D35E930314ECF41E00DB3872 /* Supporting Files */,
+			);
+			path = RespositoryBrowser;
+			sourceTree = "<group>";
+		};
+		D35E930314ECF41E00DB3872 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D35E931F14ECF5D300DB3872 /* RepositoryBrowser-Info.plist */,
+				D35E931514ECF48F00DB3872 /* main.m */,
+				D35E931B14ECF4E300DB3872 /* InfoPlist.strings */,
+				D35E931E14ECF5C800DB3872 /* RepositoryBrowser-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D35E92F714ECF41E00DB3872 /* RepositoryBrowser */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D35E931014ECF41E00DB3872 /* Build configuration list for PBXNativeTarget "RepositoryBrowser" */;
+			buildPhases = (
+				D35E92F414ECF41E00DB3872 /* Sources */,
+				D35E92F514ECF41E00DB3872 /* Frameworks */,
+				D35E92F614ECF41E00DB3872 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RepositoryBrowser;
+			productName = RespositoryBrowser;
+			productReference = D35E92F814ECF41E00DB3872 /* RepositoryBrowser.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D35E92EF14ECF41E00DB3872 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0420;
+			};
+			buildConfigurationList = D35E92F214ECF41E00DB3872 /* Build configuration list for PBXProject "RepositoryBrowser" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = D35E92ED14ECF41E00DB3872;
+			productRefGroup = D35E92F914ECF41E00DB3872 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D35E92F714ECF41E00DB3872 /* RepositoryBrowser */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D35E92F614ECF41E00DB3872 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D35E931D14ECF4E300DB3872 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D35E92F414ECF41E00DB3872 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D35E931614ECF48F00DB3872 /* main.m in Sources */,
+				D35E931A14ECF4A000DB3872 /* RBAppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		D35E931B14ECF4E300DB3872 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D35E931C14ECF4E300DB3872 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D35E930E14ECF41E00DB3872 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		D35E930F14ECF41E00DB3872 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D35E931114ECF41E00DB3872 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Code/Other/RepositoryBrowser-Prefix.pch";
+				INFOPLIST_FILE = "Resources/RepositoryBrowser-Info.plist";
+				PRODUCT_NAME = RepositoryBrowser;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		D35E931214ECF41E00DB3872 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Code/Other/RepositoryBrowser-Prefix.pch";
+				INFOPLIST_FILE = "Resources/RepositoryBrowser-Info.plist";
+				PRODUCT_NAME = RepositoryBrowser;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D35E92F214ECF41E00DB3872 /* Build configuration list for PBXProject "RepositoryBrowser" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D35E930E14ECF41E00DB3872 /* Debug */,
+				D35E930F14ECF41E00DB3872 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D35E931014ECF41E00DB3872 /* Build configuration list for PBXNativeTarget "RepositoryBrowser" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D35E931114ECF41E00DB3872 /* Debug */,
+				D35E931214ECF41E00DB3872 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D35E92EF14ECF41E00DB3872 /* Project object */;
+}

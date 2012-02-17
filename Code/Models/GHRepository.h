@@ -8,6 +8,7 @@
 
 #import <Foundation/Foundation.h>
 #import <RestKit/RestKit.h>
+#import <RestKit/UI.h>
 
 @interface GHRepository : NSObject
 
@@ -31,6 +32,7 @@
 @property (nonatomic, retain) NSDate *lastPushedAt;
 @property (nonatomic, retain) NSDate *createdAt;
 
-+ (RKObjectMapping*)objectMapping;
++ (RKObjectMapping *)objectMapping;
+- (RKTableViewCellMapping *)cellMapping;
 
 @end

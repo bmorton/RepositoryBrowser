@@ -9,6 +9,7 @@
 #import "GHRepository.h"
 
 static RKObjectMapping *objectMapping = nil;
+static RKTableViewCellMapping *cellMapping = nil;
 
 @implementation GHRepository
 
@@ -50,6 +51,17 @@ static RKObjectMapping *objectMapping = nil;
         [objectMapping mapKeyPath:@"created_at" toAttribute:@"createdAt"];
     }
     return objectMapping;
+}
+
+- (RKTableViewCellMapping *)cellMapping {
+    if (cellMapping == nil) {
+        cellMapping = [RKTableViewCellMapping cellMapping];
+        cellMapping.style = UITableViewCellStyleSubtitle;
+        cellMapping.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
+        [cellMapping mapKeyPath:@"name" toAttribute:@"textLabel.text"];
+        [cellMapping mapKeyPath:@"summary" toAttribute:@"detailTextLabel.text"];
+    }
+    return cellMapping;
 }
 
 

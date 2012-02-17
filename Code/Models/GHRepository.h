@@ -33,6 +33,5 @@
 @property (nonatomic, retain) NSDate *createdAt;
 
 + (RKObjectMapping *)objectMapping;
-- (RKTableViewCellMapping *)cellMapping;
 
 @end

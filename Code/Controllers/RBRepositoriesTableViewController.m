@@ -8,6 +8,7 @@
 
 #import "RBRepositoriesTableViewController.h"
 #import "GHRepository.h"
+#import "RBCommitsTableViewController.h"
 
 @implementation RBRepositoriesTableViewController
 
@@ -35,7 +36,19 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
 
+    RKTableViewCellMapping *cellMapping = [RKTableViewCellMapping cellMapping];
+    cellMapping.style = UITableViewCellStyleSubtitle;
+    cellMapping.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
+    [cellMapping mapKeyPath:@"name" toAttribute:@"textLabel.text"];
+    [cellMapping mapKeyPath:@"summary" toAttribute:@"detailTextLabel.text"];
+    cellMapping.onSelectCellForObjectAtIndexPath = ^(UITableViewCell *cell, id object, NSIndexPath *indexPath) {
+        RBCommitsTableViewController *viewController = [[RBCommitsTableViewController alloc] initWithStyle:UITableViewStylePlain];
+        viewController.repository = (GHRepository *)object;
+        [self.navigationController pushViewController:viewController animated:YES];
+    };
+    
     _tableController = [RKTableController tableControllerForTableViewController:self];
+    [_tableController mapObjectsWithClass:[GHRepository class] toTableCellsWithMapping:cellMapping];
     [self loadNetworkTable];
 }
 

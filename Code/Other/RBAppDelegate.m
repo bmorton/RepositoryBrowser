@@ -9,6 +9,7 @@
 #import "RBAppDelegate.h"
 #import <RestKit/RestKit.h>
 #import "GHRepository.h"
+#import "GHCommit.h"
 #import "RBRepositoriesTableViewController.h"
 
 #pragma mark - Private methods declaration
@@ -54,7 +55,8 @@
     manager.serializationMIMEType = RKMIMETypeJSON;
     
     // Setup all objectMappings for their respective resource paths
-    [manager.mappingProvider setObjectMapping:[GHRepository objectMapping] forResourcePathPattern:@"/orgs/:name/repos"];
+    [manager.mappingProvider setObjectMapping:[GHRepository objectMapping] forResourcePathPattern:@"/orgs/:user/repos"];
+    [manager.mappingProvider setObjectMapping:[GHCommit objectMapping] forResourcePathPattern:@"/repos/:user/:name/commits"];
 }
 
 - (void)constructViews {

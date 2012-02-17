@@ -22,6 +22,8 @@
 		D35E935414ECF95F00DB3872 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D35E935314ECF95F00DB3872 /* QuartzCore.framework */; };
 		D35E93A914ECFAEA00DB3872 /* GHRepository.m in Sources */ = {isa = PBXBuildFile; fileRef = D35E93A814ECFAEA00DB3872 /* GHRepository.m */; };
 		D35E93C714ED0B5B00DB3872 /* RBRepositoriesTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D35E93C614ED0B5B00DB3872 /* RBRepositoriesTableViewController.m */; };
+		D3BF202D14EE5F1E0000E918 /* GHCommit.m in Sources */ = {isa = PBXBuildFile; fileRef = D3BF202C14EE5F1E0000E918 /* GHCommit.m */; };
+		D3BF203014EE60F90000E918 /* RBCommitsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D3BF202F14EE60F90000E918 /* RBCommitsTableViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -84,6 +86,10 @@
 		D35E93A814ECFAEA00DB3872 /* GHRepository.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GHRepository.m; path = Code/Models/GHRepository.m; sourceTree = SOURCE_ROOT; };
 		D35E93C514ED0B5B00DB3872 /* RBRepositoriesTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RBRepositoriesTableViewController.h; path = Code/Controllers/RBRepositoriesTableViewController.h; sourceTree = SOURCE_ROOT; };
 		D35E93C614ED0B5B00DB3872 /* RBRepositoriesTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RBRepositoriesTableViewController.m; path = Code/Controllers/RBRepositoriesTableViewController.m; sourceTree = SOURCE_ROOT; };
+		D3BF202B14EE5F1E0000E918 /* GHCommit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GHCommit.h; path = Code/Models/GHCommit.h; sourceTree = SOURCE_ROOT; };
+		D3BF202C14EE5F1E0000E918 /* GHCommit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GHCommit.m; path = Code/Models/GHCommit.m; sourceTree = SOURCE_ROOT; };
+		D3BF202E14EE60F90000E918 /* RBCommitsTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RBCommitsTableViewController.h; path = Code/Controllers/RBCommitsTableViewController.h; sourceTree = SOURCE_ROOT; };
+		D3BF202F14EE60F90000E918 /* RBCommitsTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RBCommitsTableViewController.m; path = Code/Controllers/RBCommitsTableViewController.m; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -169,6 +175,8 @@
 			children = (
 				D35E93A714ECFAEA00DB3872 /* GHRepository.h */,
 				D35E93A814ECFAEA00DB3872 /* GHRepository.m */,
+				D3BF202B14EE5F1E0000E918 /* GHCommit.h */,
+				D3BF202C14EE5F1E0000E918 /* GHCommit.m */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -197,6 +205,8 @@
 			children = (
 				D35E93C514ED0B5B00DB3872 /* RBRepositoriesTableViewController.h */,
 				D35E93C614ED0B5B00DB3872 /* RBRepositoriesTableViewController.m */,
+				D3BF202E14EE60F90000E918 /* RBCommitsTableViewController.h */,
+				D3BF202F14EE60F90000E918 /* RBCommitsTableViewController.m */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -304,6 +314,8 @@
 				D35E931A14ECF4A000DB3872 /* RBAppDelegate.m in Sources */,
 				D35E93A914ECFAEA00DB3872 /* GHRepository.m in Sources */,
 				D35E93C714ED0B5B00DB3872 /* RBRepositoriesTableViewController.m in Sources */,
+				D3BF202D14EE5F1E0000E918 /* GHCommit.m in Sources */,
+				D3BF203014EE60F90000E918 /* RBCommitsTableViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

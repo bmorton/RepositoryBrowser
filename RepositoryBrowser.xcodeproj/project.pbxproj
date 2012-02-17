@@ -20,6 +20,8 @@
 		D35E935014ECF92000DB3872 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D35E934F14ECF92000DB3872 /* Security.framework */; };
 		D35E935214ECF92900DB3872 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D35E935114ECF92900DB3872 /* SystemConfiguration.framework */; };
 		D35E935414ECF95F00DB3872 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D35E935314ECF95F00DB3872 /* QuartzCore.framework */; };
+		D35E93A914ECFAEA00DB3872 /* GHRepository.m in Sources */ = {isa = PBXBuildFile; fileRef = D35E93A814ECFAEA00DB3872 /* GHRepository.m */; };
+		D35E93C714ED0B5B00DB3872 /* RBRepositoriesTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D35E93C614ED0B5B00DB3872 /* RBRepositoriesTableViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -78,6 +80,10 @@
 		D35E934F14ECF92000DB3872 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 		D35E935114ECF92900DB3872 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		D35E935314ECF95F00DB3872 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		D35E93A714ECFAEA00DB3872 /* GHRepository.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GHRepository.h; path = Code/Models/GHRepository.h; sourceTree = SOURCE_ROOT; };
+		D35E93A814ECFAEA00DB3872 /* GHRepository.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GHRepository.m; path = Code/Models/GHRepository.m; sourceTree = SOURCE_ROOT; };
+		D35E93C514ED0B5B00DB3872 /* RBRepositoriesTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RBRepositoriesTableViewController.h; path = Code/Controllers/RBRepositoriesTableViewController.h; sourceTree = SOURCE_ROOT; };
+		D35E93C614ED0B5B00DB3872 /* RBRepositoriesTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RBRepositoriesTableViewController.m; path = Code/Controllers/RBRepositoriesTableViewController.m; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -137,6 +143,7 @@
 		D35E930214ECF41E00DB3872 /* RespositoryBrowser */ = {
 			isa = PBXGroup;
 			children = (
+				D35E93C414ED0B3A00DB3872 /* Controllers */,
 				D35E932414ECF69800DB3872 /* Models */,
 				D35E931714ECF4A000DB3872 /* RBAppDelegate.h */,
 				D35E931814ECF4A000DB3872 /* RBAppDelegate.m */,
@@ -160,6 +167,8 @@
 		D35E932414ECF69800DB3872 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				D35E93A714ECFAEA00DB3872 /* GHRepository.h */,
+				D35E93A814ECFAEA00DB3872 /* GHRepository.m */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -181,6 +190,15 @@
 				D35E934514ECF82800DB3872 /* RestKitFrameworkTests.octest */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		D35E93C414ED0B3A00DB3872 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				D35E93C514ED0B5B00DB3872 /* RBRepositoriesTableViewController.h */,
+				D35E93C614ED0B5B00DB3872 /* RBRepositoriesTableViewController.m */,
+			);
+			name = Controllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -284,6 +302,8 @@
 			files = (
 				D35E931614ECF48F00DB3872 /* main.m in Sources */,
 				D35E931A14ECF4A000DB3872 /* RBAppDelegate.m in Sources */,
+				D35E93A914ECFAEA00DB3872 /* GHRepository.m in Sources */,
+				D35E93C714ED0B5B00DB3872 /* RBRepositoriesTableViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
